@@ -1,0 +1,21 @@
+{
+  "name": "screepsmod-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "2npm": "publish"
+  },
+  "devDependencies": {
+    "publish": "^0.6.0"
+  },
+  "screeps_mod": true,
+  "keywords": [
+    "screeps",
+    "mod"
+  ],
+  "author": "Adam Shumann",
+  "license": "MIT",
+  "dependencies": {}
+}
