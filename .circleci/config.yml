@@ -28,5 +28,5 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
-              yarn run 2npm
+              npm run 2npm
             fi
