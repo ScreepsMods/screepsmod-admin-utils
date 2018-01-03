@@ -10,6 +10,20 @@
 
 ![npm](https://nodei.co/npm/screepsmod-admin-utils.png "NPM")
 
-## TODO
+## Commands
 
-* Add Command summaries to README
+### addNPCTerminals (interval = 10)
+
+Creates NPC Terminals.
+
+The `interval` defines how often they are added, with the default value of `10` matching the behavior of the public server.
+
+A simple way to understand the `interval` is that it will place rooms where `x % interval === 0 && y % interval === 0`.
+
+### removeNPCTerminals ()
+
+Removes all NPC Terminals.
+
+### removeBots ()
+
+Removes all Bots.
