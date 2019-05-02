@@ -27,3 +27,15 @@ Removes all NPC Terminals.
 ### removeBots ()
 
 Removes all Bots.
+
+### setTickRate (value)
+
+Sets the tick rate to value (in milliseconds)
+
+### getTickRate ()
+
+Gets the current tick rate
+
+### reloadConfig () 
+
+Reloads the serverConfig section of a screeps-launcher config.yml
