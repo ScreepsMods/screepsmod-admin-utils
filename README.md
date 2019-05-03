@@ -36,6 +36,14 @@ Sets the tick rate to value (in milliseconds)
 
 Gets the current tick rate
 
+### setSocketUpdateRate(value)
+
+Sets socket update rate (in ms)
+
+### getSocketUpdateRate() 
+
+Returns current socket update rate
+
 ### reloadConfig () 
 
 Reloads the serverConfig section of a screeps-launcher config.yml
