@@ -12,7 +12,7 @@
 
 ## Commands
 
-### addNPCTerminals (interval = 10)
+### utils.addNPCTerminals(interval = 10)
 
 Creates NPC Terminals.
 
@@ -20,30 +20,54 @@ The `interval` defines how often they are added, with the default value of `10` 
 
 A simple way to understand the `interval` is that it will place rooms where `x % interval === 0 && y % interval === 0`.
 
-### removeNPCTerminals ()
+### utils.removeNPCTerminals()
 
 Removes all NPC Terminals.
 
-### removeBots ()
+### utils.removeBots()
 
 Removes all Bots.
 
-### setTickRate (value)
+### utils.setTickRate(value)
 
 Sets the tick rate to value (in milliseconds)
 
-### getTickRate ()
+### utils.getTickRate()
 
 Gets the current tick rate
 
-### setSocketUpdateRate(value)
+### utils.setSocketUpdateRate(value)
 
 Sets socket update rate (in ms)
 
-### getSocketUpdateRate() 
+### utils.getSocketUpdateRate() 
 
 Returns current socket update rate
 
-### reloadConfig () 
+### utils.setShardName(value)
+
+Sets the shard name
+
+### utils.reloadConfig() 
 
 Reloads the serverConfig section of a screeps-launcher config.yml
+
+## Config file
+
+config.yml example: (This can be the same file as screeps-launcher's config.yml)
+```yaml
+# Most of these fields will live reload on save. 
+# Values set here will override any saved via CLI on server startup
+serverConfig: 
+  tickRate: 200
+  socketUpdateRate: 200
+  whitelist: # Does not restrict login, only restricts spawning
+  - ags131
+  - zeswarm
+  shardName: 'screepsplus1'
+  constants:
+    UPGRADE_POWER: 10
+  welcomeText: |
+    <h1>Welcome</h1>
+    <div>Powered by screepsmod-admin-utils</div>
+```
