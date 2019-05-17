@@ -71,3 +71,11 @@ serverConfig:
     <h1>Welcome</h1>
     <div>Powered by screepsmod-admin-utils</div>
 ```
+
+## Endpoints
+
+A few extra endpoints are implemented enabling some extra debuging and tools
+
+`GET /stats` Lots of useful stats on server performance
+`GET /api/user/world-start-room` Dynamically returns a start room for the client
+`GET /api/experimental/pvp` Same as on mmo, returns active pvp rooms.
