@@ -70,6 +70,7 @@ serverConfig:
   welcomeText: |
     <h1>Welcome</h1>
     <div>Powered by screepsmod-admin-utils</div>
+  statsToken: ...splusToken... # This enables submitting stats to S+ Grafana. Note: shardName MUST be set
 ```
 
 ## Endpoints
