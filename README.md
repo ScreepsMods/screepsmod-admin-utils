@@ -67,6 +67,8 @@ serverConfig:
   shardName: 'screepsplus1'
   constants:
     UPGRADE_POWER: 10
+    POWER_CREEP_SPAWN_COOLDOWN: 3600000 # 1 Hour
+    POWER_CREEP_DELETE_COOLDOWN: 3600000
   welcomeText: |
     <h1>Welcome</h1>
     <div>Powered by screepsmod-admin-utils</div>
@@ -80,3 +82,4 @@ A few extra endpoints are implemented enabling some extra debuging and tools
 `GET /stats` Lots of useful stats on server performance
 `GET /api/user/world-start-room` Dynamically returns a start room for the client
 `GET /api/experimental/pvp` Same as on mmo, returns active pvp rooms.
+`GET /api/experimental/nukes` Same as on mmo, returns nukes.
