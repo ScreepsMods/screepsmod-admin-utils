@@ -48,6 +48,22 @@ Returns current socket update rate
 
 Sets the shard name
 
+### utils.getCPULimit(username)
+
+Returns current cpu limit for username.
+
+### utils.setCPULimit(username, value)
+
+Sets cpu limit to value for username. Will be overriden if GCLToCPU scaling is enabled.
+
+### utils.enableGCLToCPU([maxCPU], [baseCPU], [stepCPU])
+
+Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. The formula is "Math.min( (gclLevel * stepCPU + baseCPU), maxCPU )". Parameters are optional and default to maxCPU = 300, baseCPU = 20, stepCPU = 10. Enabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the settings.
+
+### utils.disableGCLToCPU()
+
+Disables GCLToCPU scaling. Disabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the setting.
+
 ### utils.reloadConfig() 
 
 Reloads the serverConfig section of a screeps-launcher config.yml
@@ -73,6 +89,10 @@ serverConfig:
     <h1>Welcome</h1>
     <div>Powered by screepsmod-admin-utils</div>
   statsToken: ...splusToken... # This enables submitting stats to S+ Grafana. Note: shardName MUST be set
+  gclToCPU: true
+  maxCPU: 100
+  baseCPU: 20
+  stepCPU: 10
 ```
 
 ## Endpoints
