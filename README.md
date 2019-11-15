@@ -28,13 +28,15 @@ Removes all NPC Terminals.
 
 Removes all Bots.
 
-### utils.setTickRate(value)
+### utils.setTickRate(value) <span style="color:red">DEPRECATED</span>
 
-Sets the tick rate to value (in milliseconds)
+Deprecated in favor of `system.setTickRate`   
+~~Sets the tick rate to value (in milliseconds)~~
 
-### utils.getTickRate()
+### utils.getTickRate() <span style="color:red">DEPRECATED</span>
 
-Gets the current tick rate
+Deprecated in favor of `system.getTickRate`   
+~~Gets the current tick rate~~
 
 ### utils.setSocketUpdateRate(value)
 
