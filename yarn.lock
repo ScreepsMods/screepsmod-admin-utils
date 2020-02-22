@@ -2665,10 +2665,10 @@ safe-buffer@^5.0.1, safe-buffer@^5.1.2:
   resolved "https://registry.yarnpkg.com/safer-buffer/-/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==
 
-screepsmod-admin-utils-ui@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/screepsmod-admin-utils-ui/-/screepsmod-admin-utils-ui-0.2.0.tgz#59a1cd243a856c970b90bd096884bfaa3e70f662"
-  integrity sha512-UJ2909vgF5y9HzXj/0UFUS4KPOWy34h+KUCInsfxAKVWkqKnaXhDiRjJdFAj56ViEyFN9VAy4z92HUNLh62sDQ==
+screepsmod-admin-utils-ui@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/screepsmod-admin-utils-ui/-/screepsmod-admin-utils-ui-0.3.0.tgz#e47ce590af3f07a021e7f4631ed703f05be26614"
+  integrity sha512-0RYBEWTmzoh4w7mEOYhELln91CM2y3PpFjHZ7RBcnJe/m9I5aGsDIc0qL+8m0J1jJz6p4YAz8lkdIove9EQHBA==
   dependencies:
     express "^4.14.0"
     vue-router-layout "^0.1.2"
