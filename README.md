@@ -30,12 +30,12 @@ Removes all Bots.
 
 ### utils.setTickRate(value) <span style="color:red">DEPRECATED</span>
 
-Deprecated in favor of `system.setTickRate`   
+Deprecated in favor of `system.setTickDuration(value)`   
 ~~Sets the tick rate to value (in milliseconds)~~
 
 ### utils.getTickRate() <span style="color:red">DEPRECATED</span>
 
-Deprecated in favor of `system.getTickRate`   
+Deprecated in favor of `system.getTickDuration()`   
 ~~Gets the current tick rate~~
 
 ### utils.setSocketUpdateRate(value)
