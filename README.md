@@ -14,6 +14,8 @@
 
 ### utils.importMap(urlOrId)
 
+<span style="color:orange">NOTE: [screepsmod-mongo](https://github.com/screepsmods/screepsmod-mongo) required for map imports</span>
+
 Imports a map from a url or [maps.screepspl.us](https://maps.screepspl.us)
 
 If the id is `random` or `random_WxH` a map will be randomly selected.
