@@ -21,6 +21,8 @@ Imports a map from a url or [maps.screepspl.us](https://maps.screepspl.us)
 If the id is `random` or `random_WxH` a map will be randomly selected.
 1x1 is assumed if size isn't specified.
 
+The server will be paused on tick one, use `system.resumeSimulation()` to unpause
+
 ### utils.addNPCTerminals(interval = 10)
 
 Creates NPC Terminals.
