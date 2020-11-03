@@ -12,6 +12,13 @@
 
 ## Commands
 
+### utils.importMap(urlOrId)
+
+Imports a map from a url or [maps.screepspl.us](https://maps.screepspl.us)
+
+If the id is `random` or `random_WxH` a map will be randomly selected.
+1x1 is assumed if size isn't specified.
+
 ### utils.addNPCTerminals(interval = 10)
 
 Creates NPC Terminals.
@@ -77,6 +84,7 @@ config.yml example: (This can be the same file as screeps-launcher's config.yml)
 # Most of these fields will live reload on save. 
 # Values set here will override any saved via CLI on server startup
 serverConfig: 
+  map: random_1x2 # utils.importMap will be called automatically with this value, see utils.importMap above
   tickRate: 200
   socketUpdateRate: 200
   whitelist: # Does not restrict login, only restricts spawning
