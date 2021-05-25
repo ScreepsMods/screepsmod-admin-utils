@@ -107,6 +107,12 @@ serverConfig:
   maxCPU: 100
   baseCPU: 20
   stepCPU: 10
+  history: # Builtin history support. Does not require screepsmod-history
+    enabled: false
+    chunkSize: 100
+    uri: sqlite:history.db # Sequelize connection string
+    dbOptions: # Sequelize options
+      logging: false
 ```
 
 ## Endpoints
