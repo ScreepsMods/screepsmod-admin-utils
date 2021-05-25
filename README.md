@@ -110,7 +110,7 @@ serverConfig:
   history: # Builtin history support. Does not require screepsmod-history
     enabled: false
     chunkSize: 100
-    uri: sqlite:history.db # Sequelize connection string
+    uri: sqlite:history.db # Sequelize connection string, can also be set with HISTORY_URI env variable
     dbOptions: # Sequelize options
       logging: false
 ```
