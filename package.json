@@ -8,6 +8,7 @@
     "2npm": "publish"
   },
   "devDependencies": {
+    "@screeps/backend": "^3.2.3",
     "publish": "^0.6.0",
     "standard": "*"
   },
@@ -24,5 +25,8 @@
     "ramda": "^0.27.1",
     "screepsmod-admin-utils-ui": "^0.4.0",
     "yamljs": "^0.3.0"
+  },
+  "peerDependencies": {
+    "@screeps/backend": ">=3.2.3"
   }
 }
