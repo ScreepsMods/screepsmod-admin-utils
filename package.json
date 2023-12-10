@@ -3,6 +3,9 @@
   "version": "1.31.2",
   "description": "",
   "main": "index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
     "test": "standard",
     "2npm": "publish"
