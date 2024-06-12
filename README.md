@@ -23,6 +23,10 @@ If the id is `random` or `random_WxH` a map will be randomly selected.
 
 The server will be paused on tick one, use `system.resumeSimulation()` to unpause
 
+### utils.importMapFile(filePath)
+
+Imports a map from a json file.
+
 ### utils.addNPCTerminals(interval = 10)
 
 Creates NPC Terminals.
