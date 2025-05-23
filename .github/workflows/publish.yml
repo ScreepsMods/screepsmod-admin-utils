@@ -11,10 +11,15 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v2
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
       - uses: actions/setup-node@v4
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
+          cache: pnpm
       - run: pnpm test
       - run: pnpm publish
         env:
