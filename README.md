@@ -6,7 +6,9 @@
 [![License](https://img.shields.io/npm/l/screepsmod-admin-utils.svg)](https://npmjs.com/package/screepsmod-admin-utils)
 [![Version](https://img.shields.io/npm/v/screepsmod-admin-utils.svg)](https://npmjs.com/package/screepsmod-admin-utils)
 [![Downloads](https://img.shields.io/npm/dw/screepsmod-admin-utils.svg)](https://npmjs.com/package/screepsmod-admin-utils)
-[![CircleCI](https://circleci.com/gh/screepsmods/screepsmod-admin-utils/tree/master.svg?style=shield)](https://circleci.com/gh/screepsmods/screepsmod-admin-utils/tree/master)
+![Test](https://github.com/github/docs/actions/workflows/test.yml/badge.svg)
+![Publish](https://github.com/github/docs/actions/workflows/publish.yml/badge.svg)
+
 
 ![npm](https://nodei.co/npm/screepsmod-admin-utils.png "NPM")
 
