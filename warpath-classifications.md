@@ -9,9 +9,9 @@ Any classification is automatically upgraded to the next level (including from 5
 ​
 * Neutral - No Owners or Reservers
 * Undefended - Room has no towers.
-* Developing - Is less than RCL6, or does not have at least two towers or storage.
-* Established - At least RCL6 with at least two towers and storage (or terminal).
-* Fortified - At least RCL8 with at least five towers and storage (or terminal).
+* Developing - Is less than RCL6, or does not have at least two towers and terminal.
+* Established - At least RCL6 with at least two towers and terminal.
+* Fortified - At least RCL8 with at least five towers, storage and terminal.
 ​
 ​
 ## Class 5
