@@ -96,6 +96,7 @@ config.yml example: (This can be the same file as screeps-launcher's config.yml)
 # Values set here will override any saved via CLI on server startup
 serverConfig: 
   map: random_1x2 # utils.importMap will be called automatically with this value, see utils.importMap above
+  mapFile: /path/to/map.json # Alternative to map: import from a local JSON file
   tickRate: 200
   socketUpdateRate: 200
   whitelist: # Does not restrict login, only restricts spawning
@@ -110,10 +111,29 @@ serverConfig:
     <h1>Welcome</h1>
     <div>Powered by screepsmod-admin-utils</div>
   statsToken: ...splusToken... # This enables submitting stats to S+ Grafana. Note: shardName MUST be set
+  market: # Config block passed to your market mod — see that mod's documentation for structure
+  features: # Custom features to expose to clients
+  - name: customFeature
+    version: 1
   gclToCPU: true
   maxCPU: 100
   baseCPU: 20
   stepCPU: 10
+  morgan: dev # HTTP request logging format: dev, combined, tiny, short, common. Absent or false = disabled
+  cors:
+    origins: # List of allowed origins; absent or empty disables CORS entirely
+    - https://example.com
+    - http://localhost:8080
+    allowedHeaders: # Optional — these are the defaults
+    - Authorization
+    - Content-Type
+    - X-Token
+    - X-Username
+    - X-Server-Password
+    exposedHeaders: # Optional — these are the defaults
+    - X-Token
+    - X-Username
+    - X-Server-Password
 ```
 
 ## Endpoints
