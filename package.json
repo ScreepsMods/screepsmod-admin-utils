@@ -2,6 +2,9 @@
   "name": "screepsmod-admin-utils",
   "version": "1.35.1",
   "description": "",
+  "repository": {
+    "url": "https://github.com/ScreepsMods/screepsmod-admin-utils"
+  },
   "main": "index.js",
   "scripts": {
     "test": "standard",
