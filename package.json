@@ -1,6 +1,6 @@
 {
   "name": "screepsmod-admin-utils",
-  "version": "1.36.0",
+  "version": "1.36.1",
   "description": "Admin utilities and services for Screeps Private Server",
   "repository": {
     "url": "https://github.com/ScreepsMods/screepsmod-admin-utils"
