@@ -30,6 +30,10 @@ The server will be paused on tick one, use `system.resumeSimulation()` to unpaus
 
 Imports a map from a json file.
 
+### utils.exportMap()
+
+Exports the map to a json file in the assets directory.
+
 ### utils.addNPCTerminals(interval = 10)
 
 Creates NPC Terminals.
@@ -45,6 +49,26 @@ Removes all NPC Terminals.
 ### utils.removeBots()
 
 Removes all Bots.
+
+### utils.banUser(username, remove = false)
+
+Bans the specified user. Passing `false` suspends them; `true` deletes their data entirely.
+
+### utils.unbanUser(username)
+
+Unbans the specified user.
+
+### utils.respawnUser(username)
+
+Respawns the specified user.
+
+### bots.spawn(botAIName, room, opts)
+
+Spawns a bot. `opts.auto` enables autoSpawning.
+
+### system.listCronjobs()
+
+Lists backend cronjobs. Intervals and disabled jobs come from `serverConfig.cronjobMgr`.
 
 ### utils.setTickRate(value) <span style="color:red">DEPRECATED</span>
 
@@ -76,6 +100,10 @@ Returns current cpu limit for username.
 
 Sets cpu limit to value for username. Will be overriden if GCLToCPU scaling is enabled.
 
+### utils.resetCPULimit(username)
+
+Resets the CPU limit for username to the default (100).
+
 ### utils.enableGCLToCPU([maxCPU], [baseCPU], [stepCPU])
 
 Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. The formula is "Math.min( (gclLevel * stepCPU + baseCPU), maxCPU )". Parameters are optional and default to maxCPU = 300, baseCPU = 20, stepCPU = 10. Enabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the settings.
@@ -83,6 +111,22 @@ Enables GCLToCPU scaling which raises all user's CPU limit based on their GCL. T
 ### utils.disableGCLToCPU()
 
 Disables GCLToCPU scaling. Disabling through the CLI will not persist after a server restart. Update the values in your config.yml to persist the setting.
+
+### utils.getWhitelist()
+
+Gets the current whitelist.
+
+### utils.addWhitelistUser(username)
+
+Adds the given user to the whitelist.
+
+### utils.removeWhitelistUser(username)
+
+Removes the given user from the whitelist.
+
+### utils.getStats()
+
+Returns server stats (users, rooms, creeps, tick timings). Same payload as `GET /stats`.
 
 ### utils.reloadConfig() 
 
@@ -119,6 +163,8 @@ serverConfig:
   maxCPU: 100
   baseCPU: 20
   stepCPU: 10
+  cronjobMgr: # optional; false disables a job, a number replaces its interval in seconds
+    inactiveUserCleanup: false
   morgan: dev # HTTP request logging format: dev, combined, tiny, short, common. Absent or false = disabled
   cors:
     origins: # List of allowed origins; absent or empty disables CORS entirely
@@ -144,3 +190,4 @@ A few extra endpoints are implemented enabling some extra debuging and tools
 `GET /api/user/world-start-room` Dynamically returns a start room for the client
 `GET /api/experimental/pvp` Same as on mmo, returns active pvp rooms.
 `GET /api/experimental/nukes` Same as on mmo, returns nukes.
+`GET /api/warpath/battles` Classified PvP battles.
